@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="row no-gutters">
-      <div class="col-12 col-sm-6 col-md-8">
+    <div class="row">
+      <div class="col-sm-8">
         <corousal />
         <br />
         <isi />
         <!-- <sworkshop/> -->
       </div>
-      <div class="col-6 col-md-4">
+      <div class="col-sm-4 activity-schedule-display">
         <cardfix />
       </div>
     </div>
@@ -32,3 +32,16 @@ export default {
 
 
 
+<style scoped>
+.activity-schedule-display {
+    display: block;
+}
+
+.col-sm-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+</style>
