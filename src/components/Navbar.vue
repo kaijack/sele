@@ -4,9 +4,9 @@
       <b-navbar-toggle target="nav-collapse">
         <h5>Selena</h5>
       </b-navbar-toggle>
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
       <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+
         <b-navbar-nav>
           <a-input placeholder="Cari aktifitas" class="sos">
             <a-icon slot="prefix" type="search" />
