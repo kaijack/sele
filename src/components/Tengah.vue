@@ -7,7 +7,7 @@
         <isi />
         <!-- <sworkshop/> -->
       </div>
-      <div class="col-sm-4 activity-schedule-display">
+      <div class="col-sm-4 activity-schedule-display d-none d-sm-block">
         <cardfix />
       </div>
     </div>
@@ -34,14 +34,18 @@ export default {
 
 <style scoped>
 .activity-schedule-display {
-    display: block;
+  display: block;
 }
 
 .col-sm-4 {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.collapsed > .when-opened,
+:not(.collapsed) > .when-closed {
+  display: none;
 }
 </style>
