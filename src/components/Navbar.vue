@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="container">
     <b-navbar toggleable="lg" type="light" style="background-color: white;" class="fixed-top">
       <div class="container">
         <b-navbar-toggle target="nav-collapse">
