@@ -24,7 +24,7 @@
             src="https://files.selenago.com/sandbox/91351a93-1e80-4158-acd9-bf372dcf07bb-640x480.jpg"
             alt="kittens"
           />
-          <p style="font-size: 16px;">
+          <p>
             <a href="#">
               <b>Pengalaman Seru Membatik di Desa Wisata Tembi</b>
             </a>
@@ -41,7 +41,7 @@
             src="https://files.selenago.com/sandbox/bdf15519-3769-4e60-ad8a-65eb293a5d99-640x480.jpg"
             alt="kittens"
           />
-          <p style="font-size: 18px;">
+          <p>
             <a href="#">
               <b>Workshop Yudhistira Silver</b>
             </a>
@@ -58,7 +58,7 @@
             src="https://files.selenago.com/sandbox/0fd30b17-a43e-445a-940a-0066671eddfb-640x480.jpg"
             alt="kittens"
           />
-          <p style="font-size: 15px;">
+          <p>
             <a href="#">
               <b>Belajar Tatah Sungging Wayang di Desa Wisata Tembi</b>
             </a>
@@ -75,7 +75,7 @@
             src="https://files.selenago.com/sandbox/bdf15519-3769-4e60-ad8a-65eb293a5d99-640x480.jpg"
             alt="kittens"
           />
-          <p style="font-size: 18px;">
+          <p>
             <a href="#">
               <b>Workshop Yudhistira Silver</b>
             </a>
@@ -102,6 +102,9 @@ img {
 }
 a {
   color: rgb(39, 39, 39);
+}
+p {
+  font-size: 15px;
 }
 .card {
   background-color: transparent;
