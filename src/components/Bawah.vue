@@ -1,4 +1,4 @@
-<template>
+<template >
   <div class="container">
     <div class="container mt-4">
       <div class="row">
@@ -79,8 +79,11 @@
 </template>
 
 <style scoped >
+template {
+  background: red;
+}
 .card {
-  background: white;
+  /* background: white; */
 }
 a {
   color: rgb(44, 44, 44);

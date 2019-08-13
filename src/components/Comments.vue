@@ -1,60 +1,112 @@
 <template>
-  <a-container>
-    <a-card>
-      <div>
-        <a-card-meta title="Andrea May" description="★ 4.0" style="padding: 10px; border: 0;">
-          <a-avatar
-            href="#"
-            :size="60"
-            slot="avatar"
-            src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
-            description="budi doremis"
-          />
-        </a-card-meta>
-        <a-card style="margin-left: 85px; border: 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores laborum molestias eius, ipsam est neque non aperiam, reprehenderit iure repellendus sapiente esse quibusdam unde dolore praesentium dolor explicabo. Molestiae?</p>
-        </a-card>
-      </div>
-    </a-card>
-    <br />
-    <a-card>
-      <div>
-        <a-card-meta title="Andrea May" description="★ 4.0" style="padding: 10px; border: 0;">
-          <a-avatar
-            :size="60"
-            slot="avatar"
-            src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
-            description="budi doremis"
-          />
-        </a-card-meta>
-        <a-card style="margin-left: 85px; padding: 1px; border: 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores laborum molestias eius, ipsam est neque non aperiam, reprehenderit iure repellendus sapiente esse quibusdam unde dolore praesentium dolor explicabo. Molestiae?</p>
-        </a-card>
-      </div>
-    </a-card>
+  <div class="container">
+    <div class="card">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-2 text-right">
+            <!-- <div class="container"> -->
 
-    <br />
-    <a-card>
-      <div>
-        <a-card-meta title="Andrea May" description="★ 4.0" style="padding: 10px;">
-          <a-avatar
-            :size="60"
-            slot="avatar"
-            src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
-          />
-        </a-card-meta>
-        <a-card style="margin-left: 85px; padding: 1px; border: 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores laborum molestias eius, ipsam est neque non aperiam, reprehenderit iure repellendus sapiente esse quibusdam unde dolore praesentium dolor explicabo. Molestiae?</p>
-        </a-card>
+            <a-avatar
+              href="#"
+              :size="60"
+              slot="avatar"
+              src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
+              description="budi doremis"
+            />
+          </div>
+          <div class="col-7 mt-2 mb-3">
+            <b>Andrea May</b>
+            <br />
+            <p>
+              <span style="color: gold;">★</span> 4.0
+            </p>
+          </div>
+          <div class="col-3 mt-2">
+            <p>Februari, 2019</p>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae placeat sequi, dignissimos doloremque numquam repellat! Nam cupiditate dolor et, non omnis reprehenderit eum facere dignissimos harum ut soluta fuga natus?</p>
+          </div>
+        </div>
       </div>
-    </a-card>
+    </div>
     <br />
-    <a href="#">
-      Lihat Selengkapnya
-      &nbsp;
-      <b>></b>
-    </a>
-  </a-container>
+    <div class="card">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-2 text-right">
+            <!-- <div class="container"> -->
+
+            <a-avatar
+              href="#"
+              :size="60"
+              slot="avatar"
+              src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
+              description="budi doremis"
+            />
+          </div>
+          <div class="col-7 mt-2 mb-3">
+            <b>Andrea May</b>
+            <br />
+            <p>
+              <span style="color: gold;">★</span> 4.0
+            </p>
+          </div>
+          <div class="col-3 mt-2">
+            <p>Februari, 2019</p>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae placeat sequi, dignissimos doloremque numquam repellat! Nam cupiditate dolor et, non omnis reprehenderit eum facere dignissimos harum ut soluta fuga natus?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-2 text-right">
+            <!-- <div class="container"> -->
+
+            <a-avatar
+              href="#"
+              :size="60"
+              slot="avatar"
+              src="https://img.pngio.com/parent-directory-avatar-2png-avatar-png-256_256.png"
+              description="budi doremis"
+            />
+          </div>
+          <div class="col-7 mt-2 mb-3">
+            <b>Andrea May</b>
+            <br />
+            <p>
+              <span style="color: gold;">★</span> 4.0
+            </p>
+          </div>
+          <div class="col-3 mt-2">
+            <p>Februari, 2019</p>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae placeat sequi, dignissimos doloremque numquam repellat! Nam cupiditate dolor et, non omnis reprehenderit eum facere dignissimos harum ut soluta fuga natus?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <a href="#">Lihat Selengkapnya.</a>
+  </div>
 </template>
 
 <script>
@@ -67,19 +119,4 @@ export default {
 </script>
 
 <style scoped>
-.ant-card-body {
-  padding: 0px;
-  border: none;
-}
-.a-card-meta {
-  border: 0;
-}
-.description {
-  color: gold;
-  background: gold;
-}
-.card-meta {
-  color: gold;
-  border: none;
-}
 </style>

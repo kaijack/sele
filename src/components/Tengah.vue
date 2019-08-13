@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-xs-8 col -sm-8">
         <corousal />
         <br />
         <isi />
         <!-- <sworkshop/> -->
       </div>
-      <div class="col-sm-4 activity-schedule-display d-none d-sm-block">
+      <div class="col-xs-4 col-sm-4 activity-schedule-display d-none d-sm-block">
         <cardfix />
       </div>
     </div>

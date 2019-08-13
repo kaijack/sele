@@ -29,7 +29,7 @@
       <div>
         <div class="row">
           <div class="col-5">
-            <a-button style="text-align: left; width: 130px; ">2 orang</a-button>&nbsp;
+            <a-button style="text-align: left; ">2 orang</a-button>&nbsp;
           </div>
           <div class="col-2" style="margin-left: 10px;">
             <a-button style="background: #D9D9E3;">
