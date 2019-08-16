@@ -6,12 +6,12 @@
           <h5>Selena</h5>
         </b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-brand href="#">NavBar</b-navbar-brand>
+          <b-navbar-brand to="/">Selena</b-navbar-brand>
 
           <b-navbar-nav>
             <a-input placeholder="Cari aktifitas" class="sos">
               <a-icon slot="prefix" type="search" />
-              <a-icon v-if="userName" slot="suffix" type="close-circle" @click="emitEmpty" />
+              <!-- <a-icon v-if="userName" slot="suffix" type="close-circle" @click="emitEmpty" /> -->
             </a-input>
           </b-navbar-nav>
 
@@ -19,9 +19,9 @@
 
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="#">About</b-nav-item>
+              <b-nav-item to="/about">About</b-nav-item>
               <b-nav-item href="#">Blog</b-nav-item>
-              <b-nav-item href="#">Bantuan</b-nav-item>
+              <b-nav-item to="/bantuan">Bantuan</b-nav-item>
               <popsign />
             </b-navbar-nav>
           </b-navbar-nav>
