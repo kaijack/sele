@@ -3,7 +3,7 @@
     <card>
       <!-- <a-avatar style="backgroundColor:#87d068" icon="user" /> -->
 
-      <a-card-meta title="Host by:" description="Katherine">
+      <a-card-meta title="Oleh" description="Nara Tour Organizer">
         <a-avatar
           slot="avatar"
           :size="60"
@@ -11,23 +11,33 @@
         />
       </a-card-meta>
       <br />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse officia ratione possimus voluptate officiis harum qui libero eveniet, repudiandae quidem voluptatum sequi recusandae, aperiam ipsam accusantium a vitae eum nam ipsum ullam, at nostrum omnis! Rerum eum atque fugiat unde consequuntur magni assumenda omnis, laudantium quod illum maxime aspernatur.</p>
-      <hr />
-      <h4>Lorem ipsum dolor sit?</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum assumenda illo quod ipsam nihil, culpa ex consequuntur doloremque, reprehenderit officiis dolore consequatur placeat architecto in accusantium tempore distinctio porro sunt accusamus dolorum tempora nisi facilis. Laboriosam numquam quia accusamus soluta deserunt quibusdam aspernatur obcaecati
-        <a
-          href="#"
-        >Lihat selengkapnya ></a>
-      </p>
-      <hr />
-      <h4>Lorem ipsum</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias minima quam tempora aut reiciendis optio tempore eveniet ipsa. Exercitationem vel animi consectetur porro! Eaque fugiat sapiente veniam esse enim ipsum assumenda cumque dignissimos magnam hic.
-        <a
-          href="#"
-        >Lihat selengkapnya!</a>
-      </p>
+      <div>
+        <!-- <b-table striped hover :items="jadwal"></b-table> -->
+        <h5>Deskripsi</h5>
+        <p>
+          <span v-html="info.description"></span>
+        </p>
+        <br />
+        <br />
+        <h5>Lokasi</h5>
+        <div style="color: grey">{{ info.address}}</div>
+        <br />
+        {{ info.detail_address}}
+        <br />
+        <br />
+        <div>
+          <a-button type="primary" icon="environment" ghost>Lihat di Google Map</a-button>
+        </div>
+        <br />
+        <br />
+        <div style="color: grey">
+          <h5>Detail Aktifitas</h5>
+          <br />
+          <p>
+            <span v-html="info.notes"></span>
+          </p>
+        </div>
+      </div>
       <hr />
       <h4>What to bring</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis veniam commodi quod consequuntur.</p>
@@ -63,12 +73,31 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import comments from "./Comments";
 import rate from "./Rate";
 export default {
   components: {
     comments,
     rate
+  },
+  data() {
+    return {
+      info: []
+    };
+  },
+  mounted() {
+    axios
+      .get(
+        "https://dev-api.selenago.com/api/v1/activity/sunrise-merapi-lava-tour143642"
+      )
+      .then(response => (this.info = response.data.data));
+    this.info = data.notes;
+    this.info = data.address;
+    this.info = data.detail_address;
+
+    console.log(info);
   }
 };
 </script>

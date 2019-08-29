@@ -6,9 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Antd from 'ant-design-vue'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
- 
-Vue.use(VueAxios, axios)
+
+Vue.prototype.$http = axios
 
 import 'ant-design-vue/dist/antd.css'
 
